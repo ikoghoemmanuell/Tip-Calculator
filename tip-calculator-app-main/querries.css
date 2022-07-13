@@ -1,0 +1,45 @@
+@media (max-width: 46.25em) {
+  .calc-container {
+    display: block;
+  }
+  .main-logo {
+    top: -85.6rem;
+  }
+  .tip-rates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 3rem;
+    column-gap: 1.7rem;
+  }
+  .person-img {
+    margin-bottom: 3rem;
+  }
+  .right {
+    padding: 2.2rem;
+  }
+  .result-num {
+    font-size: 3.2rem;
+  }
+  .right-2 {
+    margin-bottom: 3.4rem;
+  }
+}
+
+@media (max-width: 21.9375em) {
+  .result-num {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 53.25em) {
+  .calc-container {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}
+@media (max-width: 20em) {
+  p {
+    font-size: 1.2rem;
+  }
+  .result-num {
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,178 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Space Mono", sans-serif;
+  position: relative;
+  background-color: hsl(185, 41%, 84%);
+}
+
+/* REUSABLE STYLES */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.margin-b {
+  margin-bottom: 2rem;
+}
+.margin-b2 {
+  margin-bottom: 1rem;
+}
+.width-stretch {
+  width: 100%;
+}
+.bn {
+  border: none;
+}
+
+.main-logo {
+  width: 100%;
+  max-width: 8.7rem;
+  position: absolute;
+  top: -60rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.calc-container {
+  margin: 14.7rem auto 0 auto;
+  max-width: 92rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  border-radius: 20px;
+}
+
+/* LEFT */
+p {
+  font-size: 1.6rem;
+}
+input {
+  text-align: end;
+}
+.person {
+  font-size: 1.5rem;
+}
+.custom::placeholder {
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+}
+.bill-input::placeholder {
+  text-align: end;
+  color: hsl(184, 14%, 56%);
+}
+.dollar-img,
+.person-img {
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-position-x: 22px;
+}
+.dollar-img {
+  background-image: url(images/icon-dollar.svg);
+}
+.person-img {
+  background-image: url(images/icon-person.svg);
+}
+.bill {
+  color: hsl(184, 14%, 41%);
+}
+.tip-rates {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-bottom: 7rem;
+}
+.btn,
+.custom,
+.bill-input {
+  font-family: "Space Mono", sans-serif;
+  font-size: 2.55rem;
+  border-radius: 4px;
+}
+.btn {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 0 0.5rem 0;
+}
+.btn:hover {
+  background-color: hsl(183, 66%, 71%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+.custom,
+.bill-input {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+.custom:focus,
+.bill-input:focus,
+.custom:hover,
+.bill-input:hover {
+  outline: none !important;
+  border: 2px solid hsl(183, 66%, 71%);
+}
+.custom:hover,
+.bill-input:hover {
+  cursor: pointer;
+}
+.bill-input {
+  padding: 0.4rem 2.6rem;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* RIGHT */
+.right {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 17px;
+  padding: 3.8rem;
+}
+.right-2 {
+  margin-bottom: 9.4rem;
+}
+.tip-amount {
+  color: hsl(0, 0%, 100%);
+}
+.result-num {
+  color: hsl(172, 67%, 45%);
+  font-size: 4.8rem;
+}
+.before {
+  background-color: hsl(182, 67%, 26.9%);
+  color: hsla(183, 100%, 15%, 0.358);
+}
+.person {
+  color: hsl(184, 14%, 56%);
+}
+
+/* HOVER & CLICK */
+.after {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.hidden {
+  display: none;
+}
+.zero-red {
+  color: red;
+}
+.border-red {
+  border: 1px solid red;
+}

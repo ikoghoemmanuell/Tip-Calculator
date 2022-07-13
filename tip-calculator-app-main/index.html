@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="querries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <img class="main-logo" src="images/logo.svg" alt="main-logo" />
+    <div class="calc-container">
+      <div class="left">
+        <div class="left-1 margin-b">
+          <p class="bill">Bill</p>
+          <input
+            class="bill-input bn dollar-img width-stretch"
+            type="number"
+            placeholder="0"
+          />
+        </div>
+        <div class="left-2">
+          <p class="bill margin-b2">Select Tip %</p>
+          <div class="tip-rates">
+            <button class="five btn bn">5%</button>
+            <button class="ten btn bn">10%</button>
+            <button class="fifteen btn bn">15%</button>
+            <button class="twenty-five btn bn">25%</button>
+            <button class="fifty btn bn">50%</button>
+            <input class="custom bn" type="number" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="left-3">
+          <div class="flex">
+            <p class="bill">Number of People</p>
+            <p class="zero-red hidden">Can't be zero</p>
+          </div>
+          <input
+            class="bill-input bn person-img width-stretch"
+            type="number"
+            placeholder="0"
+          />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="right-1 flex margin-b">
+          <div class="amount-per-person">
+            <p class="tip-amount">Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="result">
+            <span class="result-num">$</span>
+            <span class="result-num tip">0.00</span>
+          </div>
+        </div>
+
+        <div class="right-2 flex">
+          <div class="amount-per-person">
+            <p class="tip-amount">Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="result">
+            <span class="result-num">$</span>
+            <span class="result-num total">0.00</span>
+          </div>
+        </div>
+
+        <button class="btn bn btn-reset before width-stretch">RESET</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
